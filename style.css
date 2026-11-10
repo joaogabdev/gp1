@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menuladoesquerdo{
+    background-color:#b0d3b7;
+    border-radius: 10px;
+    padding: 20px 40px 40px 20px;
+    border: none;
+    width: 300px;
+    height: 750px;
+
+    img{
+        width: 150px;
+    }
+}
