@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: ;
+}
+
+header {
+    background-image: url(../assets/img/AdobeStock_301737834.jpeg);
+    height: 700px;
+    width: 100%;
+}
+
+#logo-img {
+    width: 70%;
+    text-align: center;
+}
