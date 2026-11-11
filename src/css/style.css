@@ -45,3 +45,39 @@ h1 {
     text-align: center;
     line-height: 60px;
 }
+
+#carrossel-problema {
+    display: flex;
+    height: 220px;
+    justify-content: space-between;
+}
+
+.img-pro {
+    width: 270px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+#problema {
+    height: 600px;
+    background-color: #E0F1E2;
+}
+
+.titulo-sessao {
+    margin: 0;
+    padding: 20px 20px;
+    text-align: center;
+    color: #0B2D39;
+}
+
+#sub-texto {
+    margin: 0;
+    font-size: 40px;
+    background-color: #38A845;
+    color: #ffffff;
+    text-align: center;
+    width: 950px;
+    height: 50px;
+    border-radius: 10px;
+}
