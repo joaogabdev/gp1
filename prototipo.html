@@ -84,38 +84,35 @@
 
 
 
-        <div class="card">
+        <section class="card">
             <h2>Registrar ocorrencia</h2>
             <p>Descreva o problema</p>
+                <form action="" method="GET">     
+                <label for="nome"><h4>Titulo da ocorrência:</h4></label> <br>
+                <input type="text" id="email" name="nome" placeholder="ex: Buraco na via" required><br>
 
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+                <label for="linguagem">Categoria do problema</label> <br>
+                <select id="linguagem" name="linguagem" required>
+                <option value="">Selecione uma categoria</option>
+                <option value="js">1</option>
+                <option value="">2</option>
+                <option value="java">3</option>
+                </select>
 
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
-
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
-
-            <form action="/seu-script-backend" method="POST" enctype="multipart/form-data">
-
-            <label for="arquivo">Escolha um arquivo:</label>
-            <input type="file" id="arquivo" name="arquivo">
-            
-            <button>Enviar ocorrência</button>
-            </form>
-
-
-        </div>
-
+                <label for="email"><h4>Descrição</h4></label> <br>
+                <input type="senha" id="senha" name="senha" placeholder="Conte mais detalhes..." required><br>
+                
+                
+                <button type="submit"><h4>Entrar na conta</h4></button>
+                
+                </form>
 
 
 
 
 
 
-
-        </div>
+       
     </section>
 
 
