@@ -6,6 +6,7 @@ body {
     margin: 0;
     padding: 0;
     color: #0B2D39;
+    font-family: "Nunito";
 }
 
 h2 {
@@ -25,7 +26,9 @@ header {
 
 h1 {
     font-family: "Fredoka", sans-serif;
-    margin: 0;    
+    margin: 0;  
+    text-align: center;  
+    padding: 20px;
 }
 
 #logo-img {
@@ -51,7 +54,7 @@ h1 {
 #carrossel-problema {
     display: flex;
     height: 220px;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .img-pro {
@@ -59,10 +62,11 @@ h1 {
     height: 450px;
     object-fit: cover;
     border-radius: 20px;
+    border: 4px solid #ffffff
 }
 
 #problema {
-    height: 600px;
+    height: 670px;
     background-color: #E0F1E2;
 }
 
@@ -74,13 +78,13 @@ h1 {
 }
 
 #sub-texto {
-    margin: 0;
+    margin: 0 auto;
     font-size: 40px;
     background-color: #38A845;
     color: #ffffff;
     text-align: center;
-    width: 950px;
-    height: 50px;
+    width: 1050px;
+    height: 55px;
     border-radius: 10px;
 }
 
@@ -91,6 +95,8 @@ h1 {
     width: 500px;
     height: 200px;
     padding: 20px;
+    margin: 20px 20px;
+    box-shadow: 5px 5px 10px gray;
 }
 
 #beneficios {
@@ -99,6 +105,7 @@ h1 {
 
 #publico-alvo {
     background-color: #FFF4D8;
+    height: 500px;
 }
 
 #card-ben1 {
@@ -120,4 +127,43 @@ h1 {
 
 #carrossel-benef {
     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#objetivos {
+    background-color: #E0F1E2;
+}
+
+#tecnologia {
+    background-color: #FFF4D8;
+}
+
+.card {
+    width: 300px;
+    height: 360px;
+    border: 3px solid #ffff;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #E0F1E2;
+    box-shadow: 5px 5px 10px gray;
+    text-align: center;
+}
+
+.foto-card {
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#carrossel-publico {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.titulo-benef {
+    text-align: left;
+    padding: 0px;
 }
