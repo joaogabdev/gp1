@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 body {
     margin: 0;
@@ -6,16 +8,40 @@ body {
 }
 
 h2 {
-    color: ;
+    color: #0B2D39;
+    font-family: "Fredoka", sans-serif;
+    font-size: 60px;
+    margin-top: -30px;
+    margin-bottom: 30px;
 }
 
 header {
     background-image: url(../assets/img/AdobeStock_301737834.jpeg);
-    height: 700px;
+    height: 770px;
     width: 100%;
+    text-align: center;
+}
+
+h1 {
+    font-family: "Fredoka", sans-serif;    
 }
 
 #logo-img {
     width: 70%;
     text-align: center;
+}
+
+#botao-teste {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #38A845;
+    border-radius: 30px;
+    font-size: 30px;
+    font-family: "Nunito", sans-serif;
+    width: 500px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
 }
