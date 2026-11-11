@@ -5,6 +5,7 @@
 body {
     margin: 0;
     padding: 0;
+    color: #0B2D39;
 }
 
 h2 {
@@ -23,7 +24,8 @@ header {
 }
 
 h1 {
-    font-family: "Fredoka", sans-serif;    
+    font-family: "Fredoka", sans-serif;
+    margin: 0;    
 }
 
 #logo-img {
@@ -80,4 +82,42 @@ h1 {
     width: 950px;
     height: 50px;
     border-radius: 10px;
+}
+
+.card-beneficios {
+    border-color: #0B2D39;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    width: 500px;
+    height: 200px;
+    padding: 20px;
+}
+
+#beneficios {
+    background-color: #E0F1E2;
+}
+
+#publico-alvo {
+    background-color: #FFF4D8;
+}
+
+#card-ben1 {
+    background-color: #77d282;
+} 
+#card-ben2 {
+    background-color: #fff698;
+} 
+#card-ben3 {
+    background-color: #80cbf7;
+} 
+#card-ben4 {
+    background-color: #fc9999;
+} 
+
+.icon-ben {
+    height: 60px;
+}
+
+#carrossel-benef {
+    display: flex;
 }
