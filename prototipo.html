@@ -8,80 +8,59 @@
 </head>
 <body>
 
-    <div class="paginaum">
-        <!-- MENU LATERAL -->
-<div class="menu">
+<div class="paginaum">
+        <div class="menu">
+            <div class="mascote">
+                <img src="./src/assets/img/mascotesemfundo.png" alt="Mascote Cidade em Foco">
+            </div>
+            <h1>Ponto<br>a ponto</h1>
+            <p class="slogan">Sua região tem voz. Você da visibilidade</p>
+            <div class="opcoes-menu">
+                <a href="#" class="selecionado">
+                    <img src="./src/assets/img/localizacao.png" alt="icon localização">
+                    Mapa
+                </a>
 
-    <!-- MASCOTE E LOGO -->
-    <div class="mascote">
-        <img src="./src/assets/img/mascotesemfundo.png" alt="Mascote Cidade em Foco">
-    </div>
+                <a href="#">
+                    <img src="./src/assets/img/clipboard.png" alt="icon Checklist">
+                    Minhas Ocorrências
+                </a>
 
-    <h1>Ponto<br>a ponto</h1>
+                <div class="voltarvitrine">
+                    <a href="index.html"><button>Voltar para vitrine</button></a>
+                </div>
+            </div>
 
-    <p class="slogan">Sua região tem voz. Você da visibilidade</p>
+        </div>
 
-
-    <!-- OPÇÕES DO MENU -->
-    <div class="opcoes-menu">
-        <a href="#" class="selecionado">
-        <img src="./src/assets/img/localizacao.png" alt="icon localização">
-         Mapa
-        </a>
-
-        <a href="#">
-            <img src="./src/assets/img/clipboard.png" alt="icon Checklist">
-            Minhas Ocorrências
-        </a>
-
-
-    </div>
-
-</div>
-
-    <!-- PARTE PRINCIPAL -->
+  
     <div class="conteudodecima">
-    <!-- PARTE DE CIMA -->
         <div class="topo">
-
             <p> São Paulo - SP</p>
             <div class="pesquisa">
                     <img src="./src/assets/img/lupa.png" alt="icon lupa">
-            <input type="text" placeholder="Buscar por endereço...">
+                    <input type="text" placeholder="Buscar por endereço...">
             </div>
         </div>
-
-    <!-- MAPA -->
         <div class="partedomapa">
             <img src="./src/assets/img/mapa-urbano.png" alt="Mapa">
         </div>
 
-</div>
-</div>
-
- <section class="paginaocorrencias">
-        <div class="paginadois">
-            <!-- Menu -->
-
-
-        <!-- MENU LATERAL -->
-<div class="menu">
-
-    <!-- MASCOTE E LOGO -->
-    <div class="mascote">
-        <img src="./src/assets/img/mascotesemfundo.png" alt="Mascote Cidade em Foco">
     </div>
+</div>
 
-    <h1>Ponto<br>a ponto</h1>
-
-    <p class="slogan">Sua região tem voz. Você da visibilidade</p>
-
-
-    <!-- OPÇÕES DO MENU -->
-    <div class="opcoes-menu">
+<section class="paginaocorrencias">
+    <div class="paginadois">   
+        <div class="menu">
+            <div class="mascote">
+                <img src="./src/assets/img/mascotesemfundo.png" alt="Mascote Cidade em Foco">
+            </div>
+            <h1>Ponto<br>a ponto</h1>
+            <p class="slogan">Sua região tem voz. Você da visibilidade</p>
+        <div class="opcoes-menu">
         <a href="#" >
-        <img src="./src/assets/img/localizacao.png" alt="icon localização">
-         Mapa
+            <img src="./src/assets/img/localizacao.png" alt="icon localização">
+             Mapa
         </a>
 
         <a href="#" class="selecionado">
@@ -89,41 +68,33 @@
             Minhas Ocorrências
         </a>
 
+        <div class="voltarvitrine">
+            <a href="index.html"><button>Voltar para vitrine</button></a>
+        </div>
+
 
     </div>
 
 </div>
-
-
     <div class="conteudodecima">
-            <!-- Parte de cima -->
-                <div class="topo">
-   
-                    <p> ← Voltar para o mapa </p>
-
-                     <div class="icon">
-                    <img src="./src/assets/img/icon.png" alt="ICON ">
-                    </div>    
-            </div>
-
-
-
-
-      
-    <section class="card">
-
-        <div class="titulo-formulario">
-            <h2>Registrar ocorrência</h2>
-            <p>Ajude a melhorar sua cidade. Conte para nós o que aconteceu!</p>
+        <div class="topo">
+            <p> ← Voltar para o mapa </p>
+                    
+        <div class="icon">
+            <img src="./src/assets/img/icon.png" alt="ICON ">
+        </div>    
         </div>
 
-        <form action="" method="POST" enctype="multipart/form-data" class="formulario-ocorrencia">
 
-            
-            <div class="campos-formulario">
-                <div class="campo">
-                    <label for="categoria">Categoria do problema</label>
-
+<section class="card">
+    <div class="titulo-formulario">
+        <h2>Registrar ocorrência</h2>
+        <p>Ajude a melhorar sua cidade. Conte para nós o que aconteceu!</p>
+    </div>
+    <form action="" method="POST" enctype="multipart/form-data" class="formulario-ocorrencia">
+        <div class="campos-formulario">
+            <div class="campo">
+                <label for="categoria">Categoria do problema</label>
                     <select id="categoria" name="categoria" required>
                         <option value="">Selecione uma categoria</option>
                         <option value="buraco">Buraco na via</option>
@@ -133,11 +104,10 @@
                         <option value="calcada">Calçada danificada</option>
                         <option value="outro">Outro</option>
                     </select>
-                </div>
+            </div>
 
                 <div class="campo">
                     <label for="titulo">Título da ocorrência <span>*</span></label>
-
                     <input
                         type="text"
                         id="titulo"
@@ -162,7 +132,7 @@
             </div>
 
 
-            <div class="coluna">
+        <div class="coluna">
 
                 <label for="arquivo" class="botao-anexar">
                      Anexar arquivo <br>
@@ -184,7 +154,7 @@
         </form>
 
     </section>
-
+</section>
 
 
 </body>
