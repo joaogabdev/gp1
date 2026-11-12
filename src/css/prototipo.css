@@ -273,3 +273,50 @@
 .selecionado{
     background-color: #88c0a1a2;
 }
+
+/* aqui */
+
+.formulario-ocorrencia {
+    display: flex;
+    align-items: flex-start;
+    gap: 45px;
+    width: 100%;
+}
+
+
+.campos-formulario {
+    width: 550px;
+
+}
+
+
+.coluna {
+    width: 500;
+
+  
+}
+
+
+.coluna button {
+    width: 350px;
+    height: 50px;
+    margin-top: 25px;
+    background-color: #438b63;
+    color: white;
+    border: none;
+    border-radius: 11px;
+    font-family: "Quicksand", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+
+}
+
+.anexar{
+    background-color: white;
+    width: 350px;
+    height: 50px;
+    border-radius: 11px;
+    padding: 10px;
+    
+
+}

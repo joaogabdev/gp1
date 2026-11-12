@@ -109,73 +109,81 @@
 
 
 
-         <!-- FORMULÁRIO -->
-            <section class="card">
+      
+    <section class="card">
 
-                <div class="titulo-formulario">
-                    <h2>Registrar ocorrência</h2>
-                    <p>Ajude a melhorar sua cidade. Conte para nós o que aconteceu!</p>
+        <div class="titulo-formulario">
+            <h2>Registrar ocorrência</h2>
+            <p>Ajude a melhorar sua cidade. Conte para nós o que aconteceu!</p>
+        </div>
+
+        <form action="" method="POST" enctype="multipart/form-data" class="formulario-ocorrencia">
+
+            
+            <div class="campos-formulario">
+                <div class="campo">
+                    <label for="categoria">Categoria do problema</label>
+
+                    <select id="categoria" name="categoria" required>
+                        <option value="">Selecione uma categoria</option>
+                        <option value="buraco">Buraco na via</option>
+                        <option value="iluminacao">Iluminação pública</option>
+                        <option value="lixo">Acúmulo de lixo</option>
+                        <option value="sinalizacao">Sinalização</option>
+                        <option value="calcada">Calçada danificada</option>
+                        <option value="outro">Outro</option>
+                    </select>
                 </div>
 
-                <form action="" method="GET">
+                <div class="campo">
+                    <label for="titulo">Título da ocorrência <span>*</span></label>
 
-                    <div class="campo">
-                        <label for="categoria">
-                            Categoria do problema <span>*</span>
-                        </label>
+                    <input
+                        type="text"
+                        id="titulo"
+                        name="titulo"
+                        placeholder="Ex: Buraco na via"
+                        required
+                    >
+                </div>
 
-                        <select id="categoria" name="categoria" required>
-                            <option value="">Selecione uma categoria</option>
-                            <option value="buraco">Buraco na via</option>
-                            <option value="iluminacao">Iluminação pública</option>
-                            <option value="lixo">Acúmulo de lixo</option>
-                            <option value="sinalizacao">Sinalização</option>
-                            <option value="calcada">Calçada danificada</option>
-                            <option value="outro">Outro</option>
-                        </select>
-                    </div>
+                <div class="campo">
+                    <label for="descricao">Descrição <span>*</span></label>
 
+                    <textarea
+                        id="descricao"
+                        name="descricao"
+                        placeholder="Conte mais detalhes sobre o problema..."
+                        maxlength="500"
+                        required
+                    ></textarea>
+                </div>
 
-                    <div class="campo">
-                        <label for="titulo">
-                            Título da ocorrência <span>*</span>
-                        </label>
-
-                        <input
-                            type="text"
-                            id="titulo"
-                            name="titulo"
-                            placeholder="Ex: Buraco na via"
-           
-                        >
-                    </div>
+            </div>
 
 
-                    <div class="campo">
-                        <label for="descricao">
-                            Descrição <span>*</span>
-                        </label>
+            <div class="coluna">
 
-                        <textarea
-                            id="descricao"
-                            name="descricao"
-                            placeholder="Conte mais detalhes sobre o problema..."
-                            maxlength="500"
-                       
-                        ></textarea>
+                <label for="arquivo" class="botao-anexar">
+                     Anexar arquivo <br>
+                </label>
+                <div class="anexar">
+                <input
+                    type="file"
+                    id="arquivo"
+                    name="arquivo"
+                    accept="image/png,image/jpeg,application/pdf"
+                >
+                </div>
+                <button type="submit">
+                    Enviar ocorrência
+                </button>
 
+            </div>
 
-                    </div>
+        </form>
 
-
-                    <button type="submit">
-                        Registrar ocorrência
-                    </button>
-
-                </form>
-
-            </section>
-
+    </section>
 
 
 
