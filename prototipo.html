@@ -91,11 +91,11 @@
         <h2>Registrar ocorrência</h2>
         <p>Ajude a melhorar sua cidade. Conte para nós o que aconteceu!</p>
     </div>
-    <form action="" method="POST" enctype="multipart/form-data" class="formulario-ocorrencia">
+    <form id="formulario" action="./index.html" method="GET" enctype="multipart/form-data" class="formulario-ocorrencia">
         <div class="campos-formulario">
             <div class="campo">
                 <label for="categoria">Categoria do problema</label>
-                    <select id="categoria" name="categoria" required>
+                    <select id="categoria" name="categoria" >
                         <option value="">Selecione uma categoria</option>
                         <option value="buraco">Buraco na via</option>
                         <option value="iluminacao">Iluminação pública</option>
@@ -113,7 +113,7 @@
                         id="titulo"
                         name="titulo"
                         placeholder="Ex: Buraco na via"
-                        required
+                        
                     >
                 </div>
 
@@ -125,7 +125,7 @@
                         name="descricao"
                         placeholder="Conte mais detalhes sobre o problema..."
                         maxlength="500"
-                        required
+                        
                     ></textarea>
                 </div>
 
@@ -145,17 +145,18 @@
                     accept="image/png,image/jpeg,application/pdf"
                 >
                 </div>
-                <button type="submit">
+                <button type="submit" onclick="return camposvazios()">
                     Enviar ocorrência
                 </button>
-
             </div>
 
         </form>
+             
+
 
     </section>
 </section>
 
-
+<script src="./src/js/prototipo.js"></script>
 </body>
 </html>
