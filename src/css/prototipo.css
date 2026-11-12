@@ -7,12 +7,14 @@
     box-sizing: border-box;
 }
 
-/* deixar menu e o resto um do lado */
+
 .paginaum {
     display: flex;
     height: 100vh;
     padding: 10px;
     gap: 12px;
+
+    font-family: "Quicksand", Helvetica, sans-serif;
 } 
 .mascote img {
     width: 150px;
@@ -22,25 +24,98 @@
 }
 
 
-/* menu lateral*/
+
+
 .menu {
-    width: 220px;
-    background-color: #b1e2b7;
-    border-radius: 15px;
-    padding: 20px 15px;
+    width: 240px;
+    min-width: 240px;
+    height: 100%;
+    background-color:#c9e6cc;
+    border-radius: 18px;
+    padding: 20px 12px;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
 
-    h1{
-    font-size:30px;
-    color: #315b48;
+
+
+
+.mascote {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.mascote img {
+    width: 200px;
+    height: 230px;
+    object-fit: contain;
+}
+
+
+
+.menu h1 {
+    font-size: 32px;
+    color: #245b43;
     text-align: center;
-    
-    }
+    margin-top: 2px;
+    font-weight:900;
+}
+
+
+
+
+.menu .slogan {
+    font-size: 15px;
+    color: #52675a;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+
+
+.opcoes-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
 
 }
-/* slogan dentro menu */
+
+
+
+
+.opcoes-menu a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    padding: 13px 12px;
+
+    text-decoration: none;
+    color: #315b48;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    border-radius: 12px;
+    transition: 0.3s;
+    img{
+        width: 30px;
+    }
+}
+
+
+
+
+.opcoes-menu a span {
+    font-size: 19px;
+}
+
+
+
 .slogan {
     font-size: 20px;
     color: #52675a;
@@ -48,18 +123,7 @@
     margin-bottom: 8px;
 }
 
-/* lembrar de arrumar a lateral dentro do menu */
-/* {
 
-
-
-
-
-} */
-
-
-
-/* PAarte principal*/
 
 .conteudodecima {
     flex: 1;
@@ -70,7 +134,7 @@
     min-width: 0;
 }
 
-/* PARTE DE CIMA */
+
 
 .topo {
     display: flex;
@@ -78,6 +142,12 @@
     justify-content: space-between;
     font-size: 20px;
     color: #315b48;
+        img{
+        width: 15px;
+    }
+    input{
+        border: none;
+    }
 
 }
 
@@ -95,12 +165,13 @@
     height: 100vh;
     padding: 10px;
     gap: 12px;
+    font-family: "Quicksand", Helvetica, sans-serif;
 
     
 } 
 
 .card{
-    background-color: #b1e2b7;
+    background-color:#c9e6cc ;
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -113,29 +184,92 @@
 
 .icon img{
     border-radius: 50px;
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
 }
 
-.card input, select {
-    width: 350px;
-    height: 45px;
-    padding: 12px;
-    border-radius: 10px;
-    background-color:  #b1e2b7;
-    border: 2px solid  rgb(126, 128, 128);
+
+
+
+
+.card {
+    padding: 40px;
+    background-color:#c9e6cc;
+    border-radius: 15px;
+    color: #315b48;
+}
+
+
+.titulo-formulario {
     margin-bottom: 40px;
-    
 }
 
-.card button{
-    width: 350px;
-    height: 45px;
-    padding: 12px;
-    border-radius: 10px;
-    background-color:  #b1e2b7;;
-    border: 2px solid  rgb(126, 128, 128);
+.titulo-formulario h2 {
     margin-bottom: 10px;
-    color: aliceblue;
-    font-family: "Quicksand",  Times, serif;
+}
+
+
+
+
+.card .campo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 550px;
+    margin-bottom: 22px;
+}
+
+
+
+.card .campo label {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 9px;
+}
+
+
+
+.card .campo input,
+.card .campo select,
+.card .campo textarea {
+    width: 100%;
+    height: 50px;
+    padding: 14px 16px;
+    background-color: #ffffff;
+    border:none;
+    border-radius: 11px;
+
+    font-family: "Quicksand", sans-serif;
+    font-size: 14px;
+    color: #315b48;
+
+    outline: none;
+    transition: 0.3s;
+}
+
+
+.card .campo textarea {
+    height: 130px;
+
+}
+
+
+
+.card button {
+    width: 100%;
+    max-width: 550px;
+    height: 50px;
+    background-color: #438b63;
+    color: white;
+    border: none;
+    border-radius: 11px;
+    font-family: "Quicksand", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+
+}
+
+.selecionado{
+    background-color: #88c0a1a2;
 }

@@ -10,42 +10,43 @@
 
     <div class="paginaum">
         <!-- MENU LATERAL -->
-        <div class="menu">
-            <div class="mascote">
-                <img src="./src/assets/img/mascotesemfundo.png" alt="macote">
-            </div>
-            <h1>Nome projeto</h1>
-            <p class="slogan">Slogannnnn</p>
+<div class="menu">
 
-            <div class="opcoes-menu">
-                <a href="#" class="selecionado">
-                    Mapa
-                </a>
+    <!-- MASCOTE E LOGO -->
+    <div class="mascote">
+        <img src="./src/assets/img/mascotesemfundo.png" alt="Mascote Cidade em Foco">
+    </div>
 
-                <a href="#">
-                    Minhas Ocorrências
-                </a>
+    <h1>Ponto<br>a ponto</h1>
 
-                <a href="#">
-                    Estatísticas
-                </a>
+    <p class="slogan">Sua região tem voz. Você da visibilidade</p>
 
-                <a href="#">
-                    Sobre o Projeto
-                </a>
 
-            </div>
+    <!-- OPÇÕES DO MENU -->
+    <div class="opcoes-menu">
+        <a href="#" class="selecionado">
+        <img src="./src/assets/img/localizacao.png" alt="icon localização">
+         Mapa
+        </a>
 
-        </div>
+        <a href="#">
+            <img src="./src/assets/img/clipboard.png" alt="icon Checklist">
+            Minhas Ocorrências
+        </a>
 
+
+    </div>
+
+</div>
 
     <!-- PARTE PRINCIPAL -->
     <div class="conteudodecima">
     <!-- PARTE DE CIMA -->
         <div class="topo">
+
             <p> São Paulo - SP</p>
             <div class="pesquisa">
-                    img de lupa
+                    <img src="./src/assets/img/lupa.png" alt="icon lupa">
             <input type="text" placeholder="Buscar por endereço...">
             </div>
         </div>
@@ -61,59 +62,121 @@
  <section class="paginaocorrencias">
         <div class="paginadois">
             <!-- Menu -->
-        <div class="menu">
-            <div class="icon">
-                <img src="./src/assets/img/icon.png" alt="Icon">
-            </div>
-            <h1>Nome projeto</h1>
-            <p class="slogan">Slogannnnn</p>
-        </div>
 
 
+        <!-- MENU LATERAL -->
+<div class="menu">
 
-        <div class="conteudodecima">
+    <!-- MASCOTE E LOGO -->
+    <div class="mascote">
+        <img src="./src/assets/img/mascotesemfundo.png" alt="Mascote Cidade em Foco">
+    </div>
+
+    <h1>Ponto<br>a ponto</h1>
+
+    <p class="slogan">Sua região tem voz. Você da visibilidade</p>
+
+
+    <!-- OPÇÕES DO MENU -->
+    <div class="opcoes-menu">
+        <a href="#" >
+        <img src="./src/assets/img/localizacao.png" alt="icon localização">
+         Mapa
+        </a>
+
+        <a href="#" class="selecionado">
+            <img src="./src/assets/img/clipboard.png" alt="icon Checklist">
+            Minhas Ocorrências
+        </a>
+
+
+    </div>
+
+</div>
+
+
+    <div class="conteudodecima">
             <!-- Parte de cima -->
                 <div class="topo">
-                    <p> Voltar para o mapa </p>
+   
+                    <p> ← Voltar para o mapa </p>
 
                      <div class="icon">
-                    <img src="./img/icon.png" alt="icon">
+                    <img src="./src/assets/img/icon.png" alt="ICON ">
                     </div>    
+            </div>
+
+
+
+
+         <!-- FORMULÁRIO -->
+            <section class="card">
+
+                <div class="titulo-formulario">
+                    <h2>Registrar ocorrência</h2>
+                    <p>Ajude a melhorar sua cidade. Conte para nós o que aconteceu!</p>
                 </div>
 
+                <form action="" method="GET">
+
+                    <div class="campo">
+                        <label for="categoria">
+                            Categoria do problema <span>*</span>
+                        </label>
+
+                        <select id="categoria" name="categoria" required>
+                            <option value="">Selecione uma categoria</option>
+                            <option value="buraco">Buraco na via</option>
+                            <option value="iluminacao">Iluminação pública</option>
+                            <option value="lixo">Acúmulo de lixo</option>
+                            <option value="sinalizacao">Sinalização</option>
+                            <option value="calcada">Calçada danificada</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
 
 
+                    <div class="campo">
+                        <label for="titulo">
+                            Título da ocorrência <span>*</span>
+                        </label>
 
-        <section class="card">
-            <h2>Registrar ocorrencia</h2>
-            <p>Descreva o problema</p>
-                <form action="" method="GET">     
-                <label for="nome"><h4>Titulo da ocorrência:</h4></label> <br>
-                <input type="text" id="email" name="nome" placeholder="ex: Buraco na via" required><br>
+                        <input
+                            type="text"
+                            id="titulo"
+                            name="titulo"
+                            placeholder="Ex: Buraco na via"
+           
+                        >
+                    </div>
 
-                <label for="linguagem">Categoria do problema</label> <br>
-                <select id="linguagem" name="linguagem" required>
-                <option value="">Selecione uma categoria</option>
-                <option value="js">1</option>
-                <option value="">2</option>
-                <option value="java">3</option>
-                </select>
 
-                <label for="email"><h4>Descrição</h4></label> <br>
-                <input type="senha" id="senha" name="senha" placeholder="Conte mais detalhes..." required><br>
-                
-                
-                <button type="submit"><h4>Entrar na conta</h4></button>
-                
+                    <div class="campo">
+                        <label for="descricao">
+                            Descrição <span>*</span>
+                        </label>
+
+                        <textarea
+                            id="descricao"
+                            name="descricao"
+                            placeholder="Conte mais detalhes sobre o problema..."
+                            maxlength="500"
+                       
+                        ></textarea>
+
+
+                    </div>
+
+
+                    <button type="submit">
+                        Registrar ocorrência
+                    </button>
+
                 </form>
 
+            </section>
 
 
-
-
-
-       
-    </section>
 
 
 </body>
